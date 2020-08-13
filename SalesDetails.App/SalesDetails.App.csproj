@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Customers\Commands\" />
+    <Folder Include="Employees\Commands\" />
+    <Folder Include="Products\Commands\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CommonFeatures\SalesDetails.CommonFeatures.csproj" />
+    <ProjectReference Include="..\SalesDetails.Domain\SalesDetails.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
